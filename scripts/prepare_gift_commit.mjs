@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import { isMainModule } from "../../_shared/is-main.mjs";
+import { isMainModule } from "@flair-agency/cli-utils/is-main";
 
 import path from "node:path";
 
-import { readPrivateJson, writePrivateJson } from "@live-agency-skills/private-runtime-files";
+import { readPrivateJson, writePrivateJson } from "@flair-agency/private-runtime-files";
 
 import {
   giftPlanIsBlocked,
