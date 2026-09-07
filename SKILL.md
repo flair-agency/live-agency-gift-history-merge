@@ -1,9 +1,9 @@
 ---
-name: gift-history-sync
+name: live-agency-gift-history-merge
 description: Validate gift-event snapshots handed off from an already downloaded source export and safely merge them into an append-preserving master with reviewed username evidence and derived summaries. Use for manual snapshot handoffs and guarded downstream reconciliation; do not request, monitor, or download source-service exports or infer identity changes.
 ---
 
-# Sync gift history
+# Merge agency-funded gift history
 
 Keep a durable gift-event master while treating each source export as a partial
 observation. A missing event never authorizes deletion. This public skill owns

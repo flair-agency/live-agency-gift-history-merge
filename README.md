@@ -1,4 +1,4 @@
-# gift-history-sync
+# live-agency-gift-history-merge
 
 Independent Skill repository. [SKILL.md](SKILL.md) owns its behavior and acceptance contract.
 

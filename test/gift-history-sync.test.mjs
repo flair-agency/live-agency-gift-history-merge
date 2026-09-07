@@ -24,9 +24,7 @@ import {
   resolveProjectionFields,
   validateProjectionConfig,
 } from "../scripts/gift_projection_core.mjs";
-import { resolveGiftSource } from "../scripts/resolve_gift_source.mjs";
 
-const repositoryRoot = path.resolve(import.meta.dirname, "../../../test/fixtures/installation");
 const NOW = Date.parse("2030-01-03T03:04:05.000Z");
 
 function digest(value) {
@@ -235,31 +233,6 @@ test("commit preparation reads a bounded plan larger than the generic private-fi
   }
 });
 
-test("discovers and executes a normalized gift source through npm", async () => {
-  const directory = await mkdtemp(path.join(os.tmpdir(), "gift-source-test-"));
-  try {
-    const requestPath = path.join(directory, "request.json");
-    const outputPath = path.join(directory, "snapshot.json");
-    await writeFile(requestPath, JSON.stringify({
-      inputKind: "application/x.synthetic-gift-history-request+json",
-      accountKey: "synthetic.sender",
-      snapshotDate: "2030-01-02",
-    }), { encoding: "utf8", mode: 0o600 });
-    const result = await resolveGiftSource({
-      providerRoot: repositoryRoot,
-      request: requestPath,
-      output: outputPath,
-      unattended: true,
-    });
-    const output = JSON.parse(await readFile(outputPath, "utf8"));
-    assert.equal(result.status, "normalized");
-    assert.equal(output.rowCount, 1);
-    assert.equal(output.events[0].eventKey, "synthetic-event-0001");
-    assert.equal((await stat(outputPath)).mode & 0o077, 0);
-  } finally {
-    await rm(directory, { recursive: true, force: true });
-  }
-});
 
 function projectionConfig() {
   return validateProjectionConfig({

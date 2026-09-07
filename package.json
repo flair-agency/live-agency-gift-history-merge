@@ -1,6 +1,6 @@
 {
-  "name": "@flair-agency/gift-history-sync",
-  "version": "0.0.0",
+  "name": "@flair-agency/gift-history-merge",
+  "version": "1.0.0",
   "type": "module",
   "license": "MIT",
   "exports": {
@@ -28,5 +28,12 @@
   },
   "scripts": {
     "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flair-agency/live-agency-gift-history-merge.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }

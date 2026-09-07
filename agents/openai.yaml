@@ -1,4 +1,4 @@
 interface:
-  display_name: "Gift history sync"
+  display_name: "Gift history merge"
   short_description: "Safely merge partial gift snapshots into a durable master"
-  default_prompt: "Use $gift-history-sync with this already downloaded gift export and my confirmed source account and request date, prepare an append-preserving dry run, and wait for my approval before changing the master."
+  default_prompt: "Use $live-agency-gift-history-merge with this already downloaded gift export and my confirmed source account and request date, prepare an append-preserving dry run, and wait for my approval before changing the master."
