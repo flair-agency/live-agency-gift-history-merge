@@ -1,6 +1,6 @@
 {
   "name": "@flair-agency/gift-history-merge",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "type": "module",
   "license": "MIT",
   "exports": {
@@ -25,7 +25,8 @@
     "@flair-agency/cli-utils": "0.1.0",
     "@flair-agency/private-files": "1.0.0",
     "@flair-agency/provider-protocol": "1.0.0",
-    "@flair-agency/lark-base-provider": "1.0.0"
+    "@flair-agency/lark-base-provider": "1.1.0",
+    "@flair-agency/tiktok-ios-provider": "1.2.0"
   },
   "scripts": {
     "test": "node --test"

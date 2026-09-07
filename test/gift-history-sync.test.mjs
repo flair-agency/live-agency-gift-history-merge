@@ -5,7 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 
-import { validateGiftHistorySnapshot } from "@flair-agency/provider-protocol/legacy";
+import { validateGiftHistorySnapshot } from "../src/contracts.mjs";
 
 import {
   buildGiftHistoryPlan,

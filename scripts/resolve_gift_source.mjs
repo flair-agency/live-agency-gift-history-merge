@@ -3,6 +3,7 @@
 import { isMainModule } from "@flair-agency/cli-utils/is-main";
 
 import path from "node:path";
+import { validateGiftHistorySnapshot } from "../src/contracts.mjs";
 
 import {
   GIFT_HISTORY_CAPABILITY,
@@ -10,7 +11,6 @@ import {
   discoverProviders,
   readFromProvider,
   resolveProvider,
-  validateGiftHistorySnapshot,
 } from "@flair-agency/provider-protocol/legacy";
 import { readPrivateJson, writePrivateJson } from "@flair-agency/private-files";
 
