@@ -4,8 +4,8 @@ import { isMainModule } from "@flair-agency/cli-utils/is-main";
 
 import path from "node:path";
 
-import { readPrivateJson, writePrivateJson } from "@flair-agency/private-runtime-files";
-import { validateGiftHistorySnapshot } from "@flair-agency/source-provider-api";
+import { readPrivateJson, writePrivateJson } from "@flair-agency/private-files";
+import { validateGiftHistorySnapshot } from "../src/contracts.mjs";
 
 import {
   buildGiftHistoryPlan,

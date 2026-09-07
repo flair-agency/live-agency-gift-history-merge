@@ -4,7 +4,7 @@ import { isMainModule } from "@flair-agency/cli-utils/is-main";
 
 import path from "node:path";
 
-import { readPrivateJson, writePrivateJson } from "@flair-agency/private-runtime-files";
+import { readPrivateJson, writePrivateJson } from "@flair-agency/private-files";
 
 import {
   giftPlanIsBlocked,

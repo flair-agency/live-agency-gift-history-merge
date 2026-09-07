@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 
-import { validateGiftHistorySnapshot } from "@flair-agency/source-provider-api";
+import { validateGiftHistorySnapshot } from "../src/contracts.mjs";
 
 function assert(condition, message) {
   if (!condition) throw new TypeError(message);

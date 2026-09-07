@@ -5,8 +5,8 @@ import { isMainModule } from "@flair-agency/cli-utils/is-main";
 import { mkdir } from "node:fs/promises";
 import path from "node:path";
 
-import { createLarkBaseClient } from "@live-agency-skills/lark-base-client/skill-client";
-import { readPrivateJson, writePrivateJson } from "@flair-agency/private-runtime-files";
+import { createLarkBaseClient } from "@flair-agency/lark-base-provider/skill-client";
+import { readPrivateJson, writePrivateJson } from "@flair-agency/private-files";
 
 import {
   buildProjectionPlan,
