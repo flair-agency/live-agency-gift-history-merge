@@ -92,6 +92,13 @@ commit. After writing, reread canonical events and summaries, reconstruct the
 master, and require the resulting event set and totals to equal the approved
 target. Do not retry an uncertain write blindly; reread and reconcile first.
 
+Use `verifyGiftHistoryReadback` from `scripts/verify_gift_readback.mjs` for the
+normalized comparison described in [references/readback-verification.md](references/readback-verification.md).
+Supply the saved pre-write master, reviewed plan, freshly reread master and
+managed summary rows. The helper checks data consistency; the caller still
+owns complete, fresh reads from the selected destination and evidence of the
+approved write. A local synthetic verification is not destination acceptance.
+
 ## Downstream projections
 
 Treat account and monthly projection tables as derived data. Read projection

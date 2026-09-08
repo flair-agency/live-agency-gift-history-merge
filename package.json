@@ -11,6 +11,7 @@
     "./scripts/sync_gift_projection": "./scripts/sync_gift_projection.mjs",
     "./scripts/resolve_gift_source": "./scripts/resolve_gift_source.mjs",
     "./scripts/gift_history_core": "./scripts/gift_history_core.mjs",
+    "./scripts/verify_gift_readback": "./scripts/verify_gift_readback.mjs",
     "./contracts": "./src/contracts.mjs"
   },
   "files": [
